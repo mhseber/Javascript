@@ -1,19 +1,20 @@
 function first(){
-    second();
     console.log("First");
 }
 
-function first(){
-    second();
-    console.log("second");
+function second(){
+    console.log("Second");
 }
 
-function first(){
-    second();
-    console.log("third");
+function third(){
+    console.log("Third");
 }
 
-function first(){
-    second();
-    console.log("global");
+function globalFunc(){
+    console.log("Global");
 }
+
+first();
+second();
+third();
+globalFunc();
